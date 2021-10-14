@@ -1,0 +1,36 @@
+{
+  "name": "practica-2_noticias-app---nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=dev node .",
+    "dev": "cross-env NODE_ENV=dev nodemon .",
+    "styles": "gulp styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luishdezh/Practica-2_Noticias-App---NodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luishdezh/Practica-2_Noticias-App---NodeJS/issues"
+  },
+  "homepage": "https://github.com/luishdezh/Practica-2_Noticias-App---NodeJS#readme",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "nodemon": "^2.0.13",
+    "sass": "^1.42.1"
+  }
+}

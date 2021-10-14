@@ -1,0 +1,193 @@
+@import 'variables';
+
+
+.search{
+    padding: 5px;
+    background-color: rgb(83, 83, 223);
+    > * {
+        color: $font-color;
+    }
+}
+
+.grid {
+    > div{
+        box-sizing: border-box;
+        font-family: Verdana;
+        color: $font-color;
+        background-color: $primary-color;
+        border: solid 1px $secondary-color;
+        text-align: center;
+        float: left;
+        padding: 10px 10px;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    img {
+        max-width: 300px;
+        max-height: 300px;
+        min-width: 100px;
+        min-height: 100px;
+    }
+
+    > .col-phv-12 {
+        width: 100%;
+    }
+    
+    > .col-phv-8 {
+        width: 66.66%;
+    }
+    
+    > .col-phv-6 {
+        width: 50%;
+    }
+    
+    > .col-phv-4 {
+        width: 33.33%;
+    }
+    
+    > .col-phv-3 {
+        width: 25%;
+    }
+    
+    > .col-phv-2 {
+        width: 16.66%;
+    }
+    
+    > .col-phv-1 {
+        width: 8.33%;
+    }
+} 
+
+
+@mixin phone-horizontal {
+    @media screen and (min-width: 410px) { 
+        @content; 
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 700px) { 
+        @content; 
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1000px) { 
+        @content; 
+    }
+}
+
+@include phone-horizontal{
+    .grid {
+        > div{
+            background-color: $secondary-color;
+            border: solid 1px $primary-color;
+            font-size: small;
+        }
+    
+        > .col-phh-12 {
+            width: 100%;
+        }
+        
+        > .col-phh-8 {
+            width: 66.66%;
+        }
+        
+        > .col-phh-6 {
+            width: 50%;
+        }
+        
+        > .col-phh-4 {
+            width: 33.33%;
+        }
+        
+        > .col-phh-3 {
+            width: 25%;
+        }
+        
+        > .col-phh-2 {
+            width: 16.66%;
+        }
+        
+        > .col-phh-1 {
+            width: 8.33%;
+        }
+    } 
+}
+
+@include tablet{
+    .grid {
+        > div{
+            background-color: $primary-color;
+            border: solid 1px $secondary-color;
+            font-size: medium;
+        }
+    
+        > .col-t-12 {
+            width: 100%;
+        }
+        
+        > .col-t-8 {
+            width: 66.66%;
+        }
+        
+        > .col-t-6 {
+            width: 50%;
+        }
+        
+        > .col-t-4 {
+            width: 33.33%;
+        }
+        
+        > .col-t-3 {
+            width: 25%;
+        }
+        
+        > .col-t-2 {
+            width: 16.66%;
+        }
+        
+        > .col-t-1 {
+            width: 8.33%;
+        }
+    } 
+}
+
+@include desktop{
+    .grid {
+        > div{
+            background-color: $secondary-color;
+            border: solid 1px $primary-color;
+            font-size: large;
+        }
+    
+        > .col-d-12 {
+            width: 100%;
+        }
+        
+        > .col-d-8 {
+            width: 66.66%;
+        }
+        
+        > .col-d-6 {
+            width: 50%;
+        }
+        
+        > .col-d-4 {
+            width: 33.33%;
+        }
+        
+        > .col-d-3 {
+            width: 25%;
+        }
+        
+        > .col-d-2 {
+            width: 16.66%;
+        }
+        
+        > .col-d-1 {
+            width: 8.33%;
+        }
+    } 
+}

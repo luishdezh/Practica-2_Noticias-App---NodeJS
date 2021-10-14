@@ -1,0 +1,132 @@
+.search {
+  padding: 5px;
+  background-color: #5353df;
+}
+.search > * {
+  color: white;
+}
+
+.grid > div {
+  box-sizing: border-box;
+  font-family: Verdana;
+  color: white;
+  background-color: #e2525a;
+  border: solid 1px #d0db69;
+  text-align: center;
+  float: left;
+  padding: 10px 10px;
+  width: 100%;
+  font-size: 10px;
+}
+.grid img {
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 100px;
+  min-height: 100px;
+}
+.grid > .col-phv-12 {
+  width: 100%;
+}
+.grid > .col-phv-8 {
+  width: 66.66%;
+}
+.grid > .col-phv-6 {
+  width: 50%;
+}
+.grid > .col-phv-4 {
+  width: 33.33%;
+}
+.grid > .col-phv-3 {
+  width: 25%;
+}
+.grid > .col-phv-2 {
+  width: 16.66%;
+}
+.grid > .col-phv-1 {
+  width: 8.33%;
+}
+
+@media screen and (min-width: 410px) {
+  .grid > div {
+    background-color: #d0db69;
+    border: solid 1px #e2525a;
+    font-size: small;
+  }
+  .grid > .col-phh-12 {
+    width: 100%;
+  }
+  .grid > .col-phh-8 {
+    width: 66.66%;
+  }
+  .grid > .col-phh-6 {
+    width: 50%;
+  }
+  .grid > .col-phh-4 {
+    width: 33.33%;
+  }
+  .grid > .col-phh-3 {
+    width: 25%;
+  }
+  .grid > .col-phh-2 {
+    width: 16.66%;
+  }
+  .grid > .col-phh-1 {
+    width: 8.33%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .grid > div {
+    background-color: #e2525a;
+    border: solid 1px #d0db69;
+    font-size: medium;
+  }
+  .grid > .col-t-12 {
+    width: 100%;
+  }
+  .grid > .col-t-8 {
+    width: 66.66%;
+  }
+  .grid > .col-t-6 {
+    width: 50%;
+  }
+  .grid > .col-t-4 {
+    width: 33.33%;
+  }
+  .grid > .col-t-3 {
+    width: 25%;
+  }
+  .grid > .col-t-2 {
+    width: 16.66%;
+  }
+  .grid > .col-t-1 {
+    width: 8.33%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .grid > div {
+    background-color: #d0db69;
+    border: solid 1px #e2525a;
+    font-size: large;
+  }
+  .grid > .col-d-12 {
+    width: 100%;
+  }
+  .grid > .col-d-8 {
+    width: 66.66%;
+  }
+  .grid > .col-d-6 {
+    width: 50%;
+  }
+  .grid > .col-d-4 {
+    width: 33.33%;
+  }
+  .grid > .col-d-3 {
+    width: 25%;
+  }
+  .grid > .col-d-2 {
+    width: 16.66%;
+  }
+  .grid > .col-d-1 {
+    width: 8.33%;
+  }
+}
